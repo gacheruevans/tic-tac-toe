@@ -38,7 +38,7 @@ const App = () => {
 
   const won = (winner) => {
     setLock(true);
-    titleRef.current.innerHTML = `Congratulations:  ${winner === 'x' ? 'X' : 'O'}`;
+    titleRef.current.innerHTML = `Congratulations:  ${winner === 'X' ? 'X' : 'O'}`;
   };
 
   const reset = () => {
@@ -61,7 +61,7 @@ const App = () => {
               className="cell" 
               key={index} 
               onClick={toggle}>
-                {value && value === 'x' ? 'X' : 'O'}
+                {value && value === 'X' ? 'X' : 'O'}
               </div>
           ))
         }
