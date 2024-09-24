@@ -6,9 +6,9 @@ const TicTacToe = () => {
 
   return (
     <div className='game'>
+      <h1 className='title'>Tic Tac Toe</h1>
       <div className="status">
         {getStatusMessage()}
-        <button className ="reset" onClick={resetGame}>Reset Game</button>
       </div>
       <div className="board">
         {
@@ -24,6 +24,7 @@ const TicTacToe = () => {
           ))
         }
       </div>
+      <button className ="reset" onClick={resetGame}>Reset Game</button>
     </div>
   )
 }

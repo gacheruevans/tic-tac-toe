@@ -37,7 +37,7 @@ const useTicTacToe = () => {
 
     const getStatusMessage = () => {
         const winner = calculateWinner(board);
-        if(winner) return `Player ${winner} wins!`;
+        if(winner) return `Player ${winner} Wins!`;
         if(!board.includes(null)) return `It's a draw!`;
         return `Player ${isXNext ? 'X' : 'O'} turn`;
     };
