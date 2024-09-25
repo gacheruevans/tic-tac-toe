@@ -6,9 +6,9 @@ const TicTacToe = () => {
 
   return (
     <div className='game'>
-      <h1 className='title'>Tic Tac Toe</h1>
+      <h1 className='title'>Tic <span className='titletext'>Tac</span> Toe</h1>
       <div className="status">
-        {getStatusMessage()}
+        <span className='statustext'>{getStatusMessage()}</span>
       </div>
       <div className="board">
         {
